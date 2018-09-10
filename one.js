@@ -40,3 +40,21 @@ const newOutput = multiplyBy2(10);
 // -- create a new execution context compromising:
 // ---- the thread of execution (goes through the code in the function line by line)
 // ---- a local memory (Variable environment) where anything defined in the function is stored.
+
+//GLOBAL MEMORY
+//output = multiplyBy2(4)
+
+//when running a function, the global thread is paused.
+
+//LOCAL MEMORY (VARIABLE ENVIRONMENT)
+// inputNumber: 4
+// result: 8
+
+//GLOBAL MEMORY
+// output: 8;
+
+
+// CALL STACK -- a special data structure, allows us to track the current thread of execution.
+
+// PUSHING -- adding to the stack.
+
