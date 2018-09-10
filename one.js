@@ -53,8 +53,8 @@ const newOutput = multiplyBy2(10);
 //GLOBAL MEMORY
 // output: 8;
 
-
 // CALL STACK -- a special data structure, allows us to track the current thread of execution.
 
 // PUSHING -- adding to the stack.
 
+// Calling a function creates a new EXECUTION CONTEXT.
