@@ -53,3 +53,13 @@ function multiplyBy2(input) {
 }
 
 let results = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
+
+//functions in javascript = first class objects.
+
+//They can co-exist and be treated like any other javascript object.
+//1. assigned to variables and properties of other objects.
+//2. passed as arguments into functions.
+//3. returned as values from functions.
+
+// HIGHER ORDER FUNCTIONS
+// Take in a function or passes out a function.
