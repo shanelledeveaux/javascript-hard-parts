@@ -16,3 +16,4 @@ function instructionGenerator() {
 }
 
 let generatedFunc = instructionGenerator();
+var egg = "egg";
