@@ -16,4 +16,46 @@ function instructionGenerator() {
 }
 
 let generatedFunc = instructionGenerator();
-var egg = "egg";
+
+let result = generatedFunc(3); //6
+
+//calling a function in the same scope as it was defined.
+
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    counter++;
+  }
+  incrementCounter();
+}
+
+outer();
+
+//where you define your functions determines what variables your function have access to when you call the function.
+
+// what if we call the function outside of where it was defined?
+
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    counter++;
+  }
+}
+outer();
+
+incrementCounter();
+
+//Will not work.
+
+//there is a way to run a function outside of where it was defined - return the function and assign it to a new variable.
+
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    counter++;
+  }
+  return incrementCounter;
+}
+
+var myNewFunction = outer(); //myNewFunction = incrementCounter
+myNewFunction();
