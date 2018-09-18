@@ -59,3 +59,28 @@ function outer() {
 
 var myNewFunction = outer(); //myNewFunction = incrementCounter
 myNewFunction();
+
+//increment counter has a special bond to the surrounding data from when the function was born.
+//this is called a closure or a closed over variable environment.
+
+// STATIC/LEXICAL SCOPING
+
+//lexical scope - the availible live data when our function was defined - is what determines our available variables and prioritization at function execution, NOT where our function is called.
+
+//what if we run 'outer' again and store the returned incrementCounter in anotherFunction
+
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    counter++;
+  }
+  return incrementCounter;
+}
+
+let myNewFunction = outer();
+myNewFunction();
+myNewFunction();
+
+let anotherFunction = outer();
+anotherFunction();
+anotherFunction();
