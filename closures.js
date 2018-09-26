@@ -84,3 +84,8 @@ myNewFunction();
 let anotherFunction = outer();
 anotherFunction();
 anotherFunction();
+
+//the power of closure
+//NOW: Our functions get memories
+//ADVANCED: We can implement the module pattern in JavaScript
+
